@@ -1,6 +1,6 @@
-# 📊 Password Analysis Report
+# Password Analysis Report
 
-This document contains a detailed analysis of six passwords tested using three different online tools: PasswordMeter, Password Monster, and NordPass Secure Password Checker.
+This document provides a detailed analysis of six different passwords tested using three online tools: PasswordMeter, Password Monster, and NordPass Secure Password Checker.
 
 ---
 
@@ -10,12 +10,12 @@ This document contains a detailed analysis of six passwords tested using three d
 - **Screenshot:** `
 
 ![](https://github.com/deepthiii33/Elavate_Labs_task-6/blob/main/screenshots/abc123_passwordmeter.png)
-- **Score:** 8%
+- **Score:** 32%
 - **Feedback:**
-  - Extremely common and predictable
-  - Too short
-  - Contains only lowercase and digits
-  - Easy to crack (within milliseconds)
+  - Too short (less than 8 characters)
+  - Only lowercase and numbers used
+  - No uppercase or symbols
+  - Very easy to guess
 - **Verdict:** ❌ Very Weak
 
 ---
@@ -27,11 +27,11 @@ This document contains a detailed analysis of six passwords tested using three d
 
 ![](https://github.com/deepthiii33/Elavate_Labs_task-6/blob/main/screenshots/qwerty2025_pass_monster.png)
 - **Feedback:**
-  - Includes keyboard pattern (`qwerty`)
-  - Year (`2025`) is common
-  - Easily guessable by dictionary and pattern attacks
-  - Estimated crack time: less than 10 minutes
-- **Verdict:** ❌ Weak
+  - Contains predictable keyboard pattern (`Qwerty`)
+  - Ends with common year (`2025`)
+  - No symbols used
+  - Estimated crack time: **1.08 seconds**
+ - **Verdict:** ❌ Weak
 
 ---
 
@@ -46,7 +46,7 @@ This document contains a detailed analysis of six passwords tested using three d
   - Still very predictable
   - Used in many breaches
   - Estimated crack time: seconds
-- **Verdict:** ⚠️ Moderate but Unsafe
+- **Verdict:**  ❌ Weak
 
 ---
 
@@ -61,7 +61,7 @@ This document contains a detailed analysis of six passwords tested using three d
   - Easily found in password databases
   - Vulnerable to dictionary attacks
   - Estimated crack time: under a minute
-- **Verdict:** ❌ Weak
+- **Verdict:** Moderate
 
 ---
 
@@ -98,32 +98,49 @@ This document contains a detailed analysis of six passwords tested using three d
 
 Based on this evaluation and tool recommendations:
 
-- Use at least **12–16 characters**
-- Combine **uppercase, lowercase, symbols, and digits**
-- Avoid dictionary words, patterns, and common substitutions
-- Never reuse passwords across sites
-- Use a **password manager** to generate and store strong credentials
-- Enable **2FA (Two-Factor Authentication)** wherever possible
+- Use 12 characters or more
+- Mix uppercase, lowercase, numbers, and symbols
+- Avoid dictionary words and personal info
+- Don’t reuse the same password across accounts
+- Use a password manager to generate and store unique passwords
+- Enable Two-Factor Authentication (2FA) for extra protection
 
 ---
 
-## 💡 Tips Learned from Evaluation
+##  💡 Lessons from Evaluation
 
-- Even altered common words (`P@ssw0rd!`) are insecure
-- Real-word + number formats (`Lemonade22`) are guessable
-- Randomized passwords are significantly more secure
-- Length + character variety = stronger password
+- Replacing letters with symbols (P@ssw0rd!) isn’t enough
+- Dictionary + number combos (Lemonade22) are easy to guess
+- Random strings are far more secure
+- Length and randomness are key for strength
 
 ---
 
-## 🛡️ Common Password Attack Methods
+## Common Password Attack Methods
 
-| Type                 | Description                                               | Vulnerable Examples        |
-|----------------------|-----------------------------------------------------------|-----------------------------|
-| **Brute Force**       | Tries all possible combinations                          | `abc123`, `Lemonade22`      |
-| **Dictionary Attack** | Uses known wordlists and patterns                        | `Qwerty2025`, `P@ssw0rd!`   |
-| **Credential Stuffing** | Tests leaked credentials on other sites                | Any reused password         |
-| **Pattern Matching**  | Guesses common formats or keyboard patterns              | `Qwerty2025`                |
+#### 1. Brute Force Attack
+
+- Involves trying every possible combination of characters until the correct password is found.
+- Time-consuming but effective against short or simple passwords.
+- Example: abc123, Lemonade22 (low complexity, short length)
+
+#### 2. Dictionary Attack
+
+- Uses precompiled lists of common passwords and words (from leaks, patterns, or language dictionaries).
+- Efficient at breaking passwords that use real words or simple modifications.
+- Example: Qwerty2025, P@ssw0rd! (contain common words or predictable substitutions)
+
+#### 3. Credential Stuffing
+
+- Attackers use usernames and passwords leaked from one website to try logging into others.
+- Highly effective when users reuse passwords across services.
+- Example: Any reused password from data breaches.
+
+#### 4. Pattern Matching Attack
+
+- Identifies keyboard patterns (like Qwerty, 1234), date formats, or known structures (like Word+Year).
+- Exploits human tendencies to create memorable patterns.
+- Example: Qwerty2025 
 
 ---
 
@@ -140,18 +157,6 @@ Based on this evaluation and tool recommendations:
 
 ---
 
-## 📂 Files & References
 
-- Screenshots available in: `/screenshots/`
-- Summary report in: `README.md`
-- Tools used:
-  - [PasswordMeter](https://passwordmeter.com)
-  - [Password Monster](https://www.passwordmonster.com)
-  - [NordPass Secure Password Checker](https://nordpass.com/secure-password/)
 
----
 
-## 👤 Author
-
-*Your Name Here*  
-[GitHub](https://github.com/your-username)
